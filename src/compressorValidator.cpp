@@ -1,5 +1,6 @@
 #include "../include/exceptions.h"
 #include "../include/utils.h"
+#include "../include/fileCompressor"
 
 void validateCompressor(int argc, char* argv[]){
     bool validitySize = isValidSize(argc);

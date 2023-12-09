@@ -6,7 +6,7 @@
 
 int main(int argc, char* argv[]){
     if (argc < 2){
-	std::cerr << "Usage: " << argv[0] << "--command" << std::endl;
+	std::cerr << "Usage: " << argv[0] << "-command" << std::endl;
 	return EXIT_FAILURE;
     }
 
@@ -20,11 +20,13 @@ int main(int argc, char* argv[]){
 	    executeFileCompressor(argc, argv);
         } catch (SizeException& ex){
             std::cerr << ex.what() << std::endl;
-	} catch (fileException& ex){
+	} catch (InputFileException& ex){
+	    std::cerr << ex.what() << std::endl;
+	} catch (OutputFileException& ex){
 	    std::cerr << ex.what() << std::endl;
 	}
     } else {
-	std::cerr << "Unknown command: " << command << endl;
+	std::cerr << "Unknown command: " << command << std::endl;
     }
     return EXIT_SUCCESS;
 }
