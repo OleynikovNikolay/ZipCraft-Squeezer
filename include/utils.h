@@ -29,7 +29,7 @@ inline bool isValidInputFile(char* argv[]){
 
 inline bool isValidOutputFile(char* argv[]){
     std::string outputFile;
-    outputFile = argv[2];
+    outputFile = argv[3];
 
     return fileExists(outputFile);
 }
