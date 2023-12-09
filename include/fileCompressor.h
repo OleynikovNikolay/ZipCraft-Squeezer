@@ -10,6 +10,6 @@ class fileCompressor{
 	fileCompressor(const std::string &inputFile, const std::string &outputFile);
 
 	void compressFile();
-}
+};
 
 #endif //FILE_COMPRESSOR_H

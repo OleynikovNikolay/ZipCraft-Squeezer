@@ -1,11 +1,10 @@
 #include "../include/exceptions.h"
 #include "../include/utils.h"
-#include "../include/fileCompressor"
+#include "../include/fileCompressor.h"
 
 void validateCompressor(int argc, char* argv[]){
     bool validitySize = isValidSize(argc);
     bool validityInputFile = isValidInputFile(argv);
-    bool validityOutputFile = isValidOutputFile(argv);
 
     if (!validitySize){
 	throw SizeException();
@@ -13,9 +12,5 @@ void validateCompressor(int argc, char* argv[]){
 
     if (!validityInputFile){
 	throw InputFileException();
-    }
-
-    if (!validityOutputFile){
-	throw OutputFileException();
     }
 }

@@ -1,6 +1,6 @@
 #include<iostream>
 #include<fstream>
-#include "..include/fileCompressor.h"
+#include "../include/fileCompressor.h"
 
 fileCompressor::fileCompressor(const std::string &inputFile, const std::string &outputFile) : inputFile(inputFile), outputFile(outputFile){}
 
@@ -10,7 +10,7 @@ void fileCompressor::compressFile(){
     std::ofstream outFile(outputFile, std::ios::binary);
     
     if (!inFile || !outFile){
-	std::cerr << "Error opening input/output file" << std::endl;
+	std::cerr << "Error opening input/output file stream" << std::endl;
 	return;
     }
     

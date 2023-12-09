@@ -1,0 +1,3 @@
+/Users/nik/personal_projects/ZipCraft-Squeezer/mac_build/CMakeFiles/ZIPCRAFT-SQUEEZER.dir
+/Users/nik/personal_projects/ZipCraft-Squeezer/mac_build/CMakeFiles/edit_cache.dir
+/Users/nik/personal_projects/ZipCraft-Squeezer/mac_build/CMakeFiles/rebuild_cache.dir

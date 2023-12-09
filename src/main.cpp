@@ -1,12 +1,13 @@
 
 #include "../include/utils.h"
 #include "../include/commandsHandler.h"
+#include "../include/exceptions.h"
 #include<iostream>
 #include<string>
 
 int main(int argc, char* argv[]){
     if (argc < 2){
-	std::cerr << "Usage: " << argv[0] << "-command" << std::endl;
+	std::cerr << "Usage: " << argv[0] << " -command" << std::endl;
 	return EXIT_FAILURE;
     }
 
@@ -21,8 +22,6 @@ int main(int argc, char* argv[]){
         } catch (SizeException& ex){
             std::cerr << ex.what() << std::endl;
 	} catch (InputFileException& ex){
-	    std::cerr << ex.what() << std::endl;
-	} catch (OutputFileException& ex){
 	    std::cerr << ex.what() << std::endl;
 	}
     } else {

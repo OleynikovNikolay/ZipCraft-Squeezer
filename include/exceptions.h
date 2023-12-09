@@ -14,9 +14,4 @@ class InputFileException : public std::runtime_error{
 	InputFileException() : std::runtime_error("Not valid input file"){}
 };
 
-class OutputFileException : public std::runtime_error{
-    public:
-	OutputFileException() : std::runtimte_error("Not valud output file"){}
-};
-
 #endif //EXCEPTIONS_H

@@ -1,5 +1,5 @@
 #include<iostream>
-#include<ifstream>
+#include<fstream>
 
 #ifndef UTILS_H
 #define UTILS_H
@@ -25,13 +25,6 @@ inline bool isValidInputFile(char* argv[]){
     inputFile = argv[2];
 
     return fileExists(inputFile);
-}
-
-inline bool isValidOutputFile(char* argv[]){
-    std::string outputFile;
-    outputFile = argv[3];
-
-    return fileExists(outputFile);
 }
 
 #endif // UTILS_H
